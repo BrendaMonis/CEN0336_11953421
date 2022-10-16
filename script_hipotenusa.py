@@ -34,7 +34,10 @@ try:
 except ValueError:
     it_is = False
 
-print(it_is, 'inteiro') #Testando se a é um número inteiro
+if (it_is == True): #Testando se a é um número inteiro
+ print(a, 'é inteiro')
+else:
+ print('erro', a, 'não é inteiro')
 
 #Verificação da variável b: 
 if (b < 500): #Testando se b é maior ou menor que 500
@@ -50,8 +53,11 @@ try:
     it_is = True
 except ValueError:
     it_is = False
-
-print(it_is, 'inteiro') #Testando se b é um número inteiro
+  
+if (it_is == True): #Testando se a é um número inteiro
+ print(a, 'é inteiro')
+else:
+ print('erro', a, 'não é inteiro')
 
 #Apesar de não ser necessário verificar se a e b eram menores que 500 e positivo, pois no sorteio já estava delimitado isso, 
 #é bom para testas se os números sorteados se enquadravam nos objetivos 
