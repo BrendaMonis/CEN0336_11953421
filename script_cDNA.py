@@ -69,7 +69,7 @@ print('A sequência de CDS2 é', CDS2)
 #TAG:
 CDS2.find('TAG')
 print(CDS2.find('TAG'), 'é a posição do index do códon de parada TAG')
-if (CDS2.find('TAG') == 30):
+if (CDS2.find('TAG') == (N4 - N3 - 3)):
  print('A sequência termina com TAG')
 else:
  print('A sequência não termina com TAG')
@@ -77,7 +77,7 @@ else:
 #TAA:
 CDS2.find('TAA')
 print(CDS2.find('TAA'), 'é a posição do index do códon de parada TAA')
-if (CDS2.find('TAA') == 30):
+if (CDS2.find('TAA') == (N4 - N3 - 3)):
  print('A sequência termina com TAA')
 else:
  print('A sequência não termina com TAA')
@@ -85,7 +85,7 @@ else:
 #TGA:
 CDS2.find('TGA')
 print(CDS2.find('TGA'), 'é a posição do index do códon de parada TGA')
-if (CDS2.find('TGA') == 30):
+if (CDS2.find('TGA') == (N4 - N3 - 3)):
  print('A sequência termina com TGA')
 else:
  print('A sequência não termina com TGA')
