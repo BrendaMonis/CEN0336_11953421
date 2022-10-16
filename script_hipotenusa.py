@@ -49,15 +49,19 @@ if (b > 0): #Testando se b é positivo ou negativo
 else:
  print(b,'não é positivo')
 try:
-    int(a)
+    int(b)
     it_is = True
 except ValueError:
     it_is = False
-  
-if (it_is == True): #Testando se a é um número inteiro
- print(a, 'é inteiro')
-else:
- print('erro', a, 'não é inteiro')
 
-#Apesar de não ser necessário verificar se a e b eram menores que 500 e positivo, pois no sorteio já estava delimitado isso, 
-#é bom para testas se os números sorteados se enquadravam nos objetivos 
+if (it_is == True): #Testando se b é um número inteiro
+ print(b, 'é inteiro')
+else:
+ print('erro', b, 'não é inteiro')
+
+#Apesar de não ser necessário verificar se a e b eram menores que 500 e positivo, pois no sorteio já estava delimitado isso,
+#é bom para testas se os números sorteados se enquadravam nos objetivos
+
+#Por último, será calculado o quadrado da hipotenusa (h)
+h = ((a ** 2) + (b ** 2))
+print ('O quadrado da hipotenusa para o triangulo retângulo com lados a=', a, 'e b=', b,'é', h)
