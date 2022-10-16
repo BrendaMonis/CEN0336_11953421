@@ -9,16 +9,74 @@ import sys
 DNA = 'CGTCGTCGCCGCCGCCGCCATGTCGGGAGGTGGTGTGATCCGTGGCCCGACGAAAAAAAAAAAAAGCGGGGAACAACGACTGCCGCATCTACGTGTAAAAAAACGAAAAAAAAAAAAAAAAAAAA'
 print('a sequência de DNA é', DNA)
 
-N1 = DNA[0:19] 
-print(N1, 'é a sequência N1')
+N1 = 20
+print(N1, 'é a coordenada N1')
 
-N2 = DNA[0:49]
-print(N2, 'é a sequência N2')
+N2 = 49
+print(N2, 'é a coordenada N2')
 
-N3 = DNA[49:65]
-print(N3, 'é a sequência N3')
+N3 = 66
+print(N3, 'é a coordenada N3')
 
-N4 = DNA[49:98]
-print(N4, 'é a sequência N4')
+N4 = 98
+print(N4, 'é a coordenada N4')
 
 #Posteiormente, deve-se conferir se os dados estão corretos e se não há nenhum número inteiro maior que o tamanho da sequência de DNA
+len(DNA)
+if (N1 and N2 and N3 and N4 < len(DNA)): #Testando se as coordenadas não são maiores que o tamanho da sequência
+ print('as coordenadas são menores que o tamanho da sequência de DNA')
+else:
+ print('as coordenadas são maiores que o tamanho da sequência de DNA')
+
+try:
+    int(N1 and N2 and N3 and N4)
+    it_is = True
+except ValueError:
+    it_is = False
+
+if (it_is == True): #Testando se as coordenadas são um número inteiro
+ print('as coordenadas são um número inteiro')
+
+#Em seguida, deseja-se extrair a sequência CDS1 e, após isso, conferir se a mesma inicia com ATG
+CDS1 = DNA[(N1-1):N2] #Extraindo a sequência CDS1
+print('A sequência de CDS1 é', CDS1)
+
+CDS1.find('ATG') #Conferindo se inicia com o códon de início ATG
+print(CDS1.find('ATG'), 'é a posição do index ATG')
+if (CDS1.find('ATG') == 0):
+ print('A sequência começa com ATG')
+else:
+ print('A sequência não começa com ATG')
+
+#Também deseja-se extrair a sequência CDS2 e, após isso, conferir se a mesma termina com TAG, TAA OU TGA
+CDS2 = DNA[(N3-1):N4]
+print('A sequência de CDS2 é', CDS2)
+
+#Conferindo se termina com um dos códons de parada
+#TAG:
+CDS2.find('TAG')
+print(CDS2.find('TAG'), 'é a posição do index do códon de parada TAG')
+if (CDS2.find('TAG') == 30):
+ print('A sequência termina com TAG')
+else:
+ print('A sequência não termina com TAG')
+
+#TAA:
+CDS2.find('TAA')
+print(CDS2.find('TAA'), 'é a posição do index do códon de parada TAA')
+if (CDS2.find('TAA') == 30):
+ print('A sequência termina com TAA')
+else:
+ print('A sequência não termina com TAA')
+
+#TGA:
+CDS2.find('TGA')
+print(CDS2.find('TGA'), 'é a posição do index do códon de parada TGA')
+if (CDS2.find('TGA') == 30):
+ print('A sequência termina com TGA')
+else:
+ print('A sequência não termina com TGA')
+
+#Por último, como a sequência CDS1 inicia com ATG e a CDS2 termina com TAA, deve-se concatenar CDS1 e CDS2
+print('A sequência CDS1 e CDS2 concatenadas é:')
+print(CDS1, CDS2, sep = '')
