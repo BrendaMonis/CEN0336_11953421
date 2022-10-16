@@ -28,13 +28,26 @@ if (N1 and N2 and N3 and N4 < len(DNA)): #Testando se as coordenadas não são m
 else:
  print('as coordenadas são maiores que o tamanho da sequência de DNA')
 
-try:
-    int(N1 and N2 and N3 and N4)
-    it_is = True
-except ValueError:
-    it_is = False
+tudo_certo = True
 
-if (it_is == True): #Testando se as coordenadas são um número inteiro
+try:
+ N1 = int(N1)
+except:
+    tudo_certo = False
+try:
+ N2 = int(N2)
+except:
+    tudo_certo = False
+try:
+ N3 = int(N3)
+except:
+    tudo_certo = False
+try:
+ N4 = int(N4)
+except:
+    tudo_certo = False
+
+if (tudo_certo == True): #Testando se as coordenadas são um número inteiro
  print('as coordenadas são um número inteiro')
 
 #Em seguida, deseja-se extrair a sequência CDS1 e, após isso, conferir se a mesma inicia com ATG
