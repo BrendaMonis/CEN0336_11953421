@@ -52,3 +52,6 @@ except ValueError:
     it_is = False
 
 print(it_is, 'inteiro') #Testando se b é um número inteiro
+
+#Apesar de não ser necessário verificar se a e b eram menores que 500 e positivo, pois no sorteio já estava delimitado isso, 
+#é bom para testas se os números sorteados se enquadravam nos objetivos 
