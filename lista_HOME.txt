@@ -1,0 +1,28 @@
+total 1180
+-rw-rw-r-- 1 brenda brenda       0 out  6 09:25 =2.26
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 Área de Trabalho
+-rw-rw-r-- 1 brenda brenda      52 out 11 14:10 arquivo.txt
+-rwxrwxr-x 1 brenda brenda     925 out 14 15:26 bash_script.sh
+-rwxrwxr-x 1 brenda brenda     101 out  1 10:02 bruna.py
+-rw-rw-r-- 1 brenda brenda 1113672 out 12 12:39 cuffdiff.txt
+-rw-rw-r-- 1 brenda brenda      14 out 12 12:38 cuffdiff.txt~
+-rwxrwxr-x 1 brenda brenda     524 out 12 17:47 dna.py
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 Documentos
+drwxr-xr-x 4 brenda brenda    4096 out 13 21:24 Downloads
+-rw-rw-r-- 1 brenda brenda       0 out 12 11:48 fav_chr_cuffdiff.txt
+-rwxrwxr-x 1 brenda brenda      50 out 12 15:11 hello.py
+-rw-rw-r-- 1 brenda brenda     110 out 12 12:25 hello-world.c
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 Imagens
+-rwxrwxr-x 1 brenda brenda     102 set 27 15:13 joao.py
+-rwxrwxr-x 1 brenda brenda       0 out 14 16:08 lista_HOME.txt
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 Modelos
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 Música
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 Público
+-rwxrwxr-x 1 brenda brenda     288 out 13 17:33 scipt3.py
+-rwxrwxr-x 1 brenda brenda     322 out 12 16:31 script1.py
+-rwxrwxr-x 1 brenda brenda     203 set 15 21:34 script2.py
+-rw-rw-r-- 1 brenda brenda     445 out 14 16:03 script_hipotenusa.py
+drwx------ 5 brenda brenda    4096 out 12 12:37 snap
+-rwxrwxr-x 1 brenda brenda     338 out 12 16:37 tentativa.py
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 Vídeos
+-rw-r--r-- 1 brenda brenda    2449 out 11 15:05 x
