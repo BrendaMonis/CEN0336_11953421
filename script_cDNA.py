@@ -56,7 +56,7 @@ print('A sequência de CDS1 é', CDS1)
 
 CDS1.find('ATG') #Conferindo se inicia com o códon de início ATG
 print(CDS1.find('ATG'), 'é a posição do index ATG')
-if (CDS1.find('ATG') == 0):
+if (CDS1.find('ATG') == (N1 - N1)):
  print('A sequência começa com ATG')
 else:
  print('A sequência não começa com ATG')
